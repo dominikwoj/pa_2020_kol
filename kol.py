@@ -53,7 +53,7 @@ def main():
     can_set = [Can() for i in range(can_count)]
     for i in range(operation_count):
         c_start, c_stop, color = data[i + 1]
-        # print(f'opeation: {i + 1}|can: {c_start}->{c_stop}|color={color}')
+        print(f'opeation: {i + 1}|can: {c_start}->{c_stop}|color={color}')
         for c in range(c_start - 1, c_stop):
             can_set[c].add_color(color)
     print([can_set[i].name_color() for i in range(can_count)].count(True))

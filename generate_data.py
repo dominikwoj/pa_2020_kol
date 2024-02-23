@@ -1,7 +1,7 @@
 import random
 
-can_count_max = 100
-operation_count_max = 100
+can_count_max = 100000
+operation_count_max = 100000
 can_count = random.randint(1, can_count_max)
 operation_count = random.randint(1, operation_count_max)
 
@@ -15,5 +15,5 @@ for i in range(0, operation_count):
     out += f'\n{c_start} {c_stop} {color}'
 
 #print(out)
-with open('data1h1h.csv', 'w') as file:
+with open('data100k100k.csv', 'w') as file:
     file.write(out)
